@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="app_name">Cesar</string>
+    <string name="titulo_benvida">Cifrado César</string>
+    <string name="subtitulo_benvida">Escribe un mensaje y desplaza el alfabeto</string>
+    <string name="hint_mensaxe">Mensaje a cifrar</string>
+    <string name="accion_continuar">Continuar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
