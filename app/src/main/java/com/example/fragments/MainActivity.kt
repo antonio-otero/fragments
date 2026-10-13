@@ -10,9 +10,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        supportFragmentManager.commit {
-            setReorderingAllowed(true)
-            add<WelcomeFragment>(R.id.contenedor)
+        if (savedInstanceState == null) {
+            supportFragmentManager.commit {
+                setReorderingAllowed(true)
+                add<WelcomeFragment>(R.id.contenedor)
+            }
         }
     }
 }

@@ -31,6 +31,7 @@ class WelcomeFragment : Fragment() {
             parentFragmentManager.commit {
                 setReorderingAllowed(true)
                 replace<MessageFragment>(R.id.contenedor)
+                addToBackStack(null)
             }
         }
 

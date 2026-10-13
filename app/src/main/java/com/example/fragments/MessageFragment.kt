@@ -21,6 +21,7 @@ class MessageFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 // los clics, en el paso siguiente
+
     }
     override fun onDestroyView() {
         super.onDestroyView()
