@@ -1,19 +1,15 @@
 package com.example.fragments
-
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.fragments.databinding.FragmentMessageBinding
-
 class MessageFragment : Fragment() {
-
     private var _binding: FragmentMessageBinding? = null
     private val binding get() = checkNotNull(_binding) {
         "No se puede acceder al binding porque es nulo. ¿Está visible la vista?"
     }
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -22,12 +18,10 @@ class MessageFragment : Fragment() {
         _binding = FragmentMessageBinding.inflate(inflater, container, false)
         return binding.root
     }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        // Aquí se gestionarán los clics y datos
+// los clics, en el paso siguiente
     }
-
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
