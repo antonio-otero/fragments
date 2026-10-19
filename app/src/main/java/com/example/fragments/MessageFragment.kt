@@ -21,6 +21,9 @@ class MessageFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 // los clics, en el paso siguiente
+        val texto = requireArguments().getString("texto")
+        binding.tvMensaje.text = texto
+
 
     }
     override fun onDestroyView() {

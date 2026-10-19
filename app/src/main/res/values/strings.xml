@@ -5,4 +5,9 @@
         <string name="accion_continuar">Continuar</string>
         <string name="titulo_mensaxe">Mensaje</string>
         <string name="accion_volver">Volver</string>
+        <string name="hint_mensaxe">Mensaje a cifrar</string>
+        <string name="hint_desplazamiento">Desplazamiento</string>
+        <string name="titulo_cifrado">Resultado</string>
+        <string name="etiqueta_orixinal">Original</string>
+        <string name="etiqueta_cifrado">Cifrado</string>
 </resources>
