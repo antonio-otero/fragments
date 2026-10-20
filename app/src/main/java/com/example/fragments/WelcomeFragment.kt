@@ -10,6 +10,8 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.commit
 import androidx.fragment.app.replace
 import androidx.core.os.bundleOf
+import androidx.navigation.fragment.findNavController
+
 
 import androidx.navigation.fragment.findNavController
 import com.example.fragments.databinding.FragmentWelcomeBinding
@@ -30,13 +32,14 @@ class WelcomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         binding.btContinuar.setOnClickListener {
-            findNavController().navigate(
-                R.id.accion_welcome_a_message,
-                bundleOf("texto" to binding.etMensaje.text.toString())
+            val accion = WelcomeFragmentDirections.accionWelcomeAEncrypt(
+                texto = binding.etMensaje.text.toString(),
+                desplazamiento = binding.etDesplazamiento.text.toString().toIntOrNull() ?: 3
             )
+            findNavController().navigate(accion)
         }
+
     }
 
 

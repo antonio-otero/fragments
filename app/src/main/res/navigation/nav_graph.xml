@@ -12,14 +12,24 @@
         tools:layout="@layout/fragment_welcome">
 
         <action
-            android:id="@+id/accion_welcome_a_message"
-            app:destination="@id/messageFragment" />
+            android:id="@+id/accion_welcome_a_encrypt"
+            app:destination="@id/encryptFragment" />
     </fragment>
 
     <fragment
-        android:id="@+id/messageFragment"
-        android:name="com.example.fragments.MessageFragment"
-        android:label="@string/titulo_mensaxe"
-        tools:layout="@layout/fragment_message" />
+        android:id="@+id/encryptFragment"
+        android:name="com.example.fragments.EncryptFragment"
+        android:label="@string/titulo_cifrado"
+        tools:layout="@layout/fragment_encrypt">
+
+        <argument
+            android:name="texto"
+            app:argType="string" />
+
+        <argument
+            android:name="desplazamiento"
+            app:argType="integer"
+            android:defaultValue="3" />
+    </fragment>
 
 </navigation>
